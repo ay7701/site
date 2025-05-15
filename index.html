@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bunedi göresen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+
+  <div class="container">
+    <h1>🔒 Şifrəni tapmalısan</h1>
+    <p>Qeyd: Şifrə doğum tarixindir (gün.ay Məsələn: 05.02)</p>
+
+    <form id="form" onsubmit="event.preventDefault(); checkPassword();">
+      <input
+        id="password"
+        type="text"
+        placeholder="Şifrəni bura yaz"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Təsdiqlə</button>
+    </form>
+
+    <div id="error-message" class="error"></div>
+
+    <div id="final-message" style="display:none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
