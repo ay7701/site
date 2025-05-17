@@ -1,4 +1,4 @@
-const correctPassword = "19.05";
+const correctPassword = "17.05";
 const canvas = document.getElementById('confetti');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
